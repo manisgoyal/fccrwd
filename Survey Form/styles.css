@@ -1,0 +1,97 @@
+/*Add content before the body*/
+/*Fixes the problem of background-attatchment: fxed used wth body on mobile devices*/
+body::before{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    background-image:linear-gradient(90deg,rgb(128, 128, 128,0.8),rgba(177, 177, 177,0.7)), url(https://raw.githubusercontent.com/manisgoyal/fccrwd/master/Survey%20Form/bgDog.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    color:cornsilk;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    text-align: center;
+}
+h1,p{
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+#title{
+    font-weight: 900;
+    line-height: 1.3em;
+}
+#description{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.125rem;
+}
+#description:hover{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    color: blanchedalmond;
+}
+main, header {
+    margin: 5px auto;
+    max-width:60vw;
+}
+main{
+    background: linear-gradient(115deg,rgba(111,111,111,0.87),rgba(82,82,82,0.85));
+    padding: 1.75rem 0.25rem;
+    width: fit-content;
+    border-radius: 1.35rem;
+}
+input, select, label, textarea{
+    width: 90%;
+    display: inline-block;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.5rem;
+    border-radius: 0.32rem;
+    margin: .5em 0;
+    border: none;
+}
+label{
+    margin-top: 1em;
+}
+.ques{
+    margin-top: 1em ;
+    margin-left: 0.75rem;
+}
+.radio-labels, .checkbox-labels{
+    display: flex;
+    margin:unset;
+    height: fit-content;
+}
+input[type="radio"], input[type="checkbox"]{
+    width:1.05rem;
+    height: 1.05rem;
+    display: inline-block;
+    margin: 0.3rem 0.45rem 0.2rem 0;
+}
+p{
+    margin: 0;
+    font-size: 1.5rem;
+}
+span{
+    font-size: 1.4rem;
+}
+#query{
+    height: 5rem;
+}
+input[type="submit"]{
+    color:burlywood;
+    height: 4rem;
+    font-size: 2.4rem;
+    margin-left: 0.375rem;
+}
+input[type="submit"]:hover{
+    background-color: rgb(0, 182, 0);
+    color: floralwhite;
+}

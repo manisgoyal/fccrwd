@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">
+            Survey Form
+        </h1>
+        <p id="description">We care about your pets as much as you love them.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label id="name-label">Enter your name: <input type="text" id="name" required placeholder="Enter your full name"></label>
+            <label id="email-label">Enter your Email Address: <input type="email" id="email" required placeholder="Enter your email address"></label>
+            <label id="number-label">Enter the number: <span>(Optional)</span> <input type="number" id="number" min="1" max="10" placeholder="Enter the number of your pets"></label>
+            <label>
+                <p>How did you come to know about us?</p>
+                <select name="dropdown" id="dropdown">
+                    <option value="">Select a option</option>
+                    <option value="news">News Outlets</option>
+                    <option value="socials">Social Media: Facebook, Instagram, YouTube, Twitter</option>
+                    <option value="referrals">From friends or relatives</option>
+                    <option value="ads">Advertisements</option>
+                </select>
+            </label>
+            <p class="ques">Which branch would you like to visit?</p>
+            <label class="radio-labels"><input type="radio" name="location" value="del" checked> New Delhi</label>
+            <label class="radio-labels"><input type="radio" name="location" value="mum"> Mumbai</label>
+            <label class="radio-labels"><input type="radio" name="location" value="bng"> Bangalore</label>
+            <p class="ques">Choose all the services you would like to avail. <span>(Choose all that apply.)</span></p>
+            <label class="checkbox-labels"><input type="checkbox" name="services" value="checkup"> Regular CheckUp</label>
+            <label class="checkbox-labels"><input type="checkbox" name="services" value="vac"> Vaccination</label>
+            <label class="checkbox-labels"><input type="checkbox" name="services" value="emerg"> Emergency Services</label>
+            <label class="checkbox-labels"><input type="checkbox" name="services" value="appoint"> On Doctor's Appointment</label>
+            <label class="checkbox-labels"><input type="checkbox" name="services" value="consult"> Doctor's Consult</label>
+            <label>
+                Enter Additional Queries: 
+                <textarea name="query" id="query" placeholder="Further Queries"></textarea>
+            </label>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>
